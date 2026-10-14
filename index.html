@@ -1,0 +1,26 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>QalaPass — куда сегодня?</title><script>if(!localStorage.getItem("qalaSession"))location.replace("auth.html")</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
+<div id="siteHeader"></div>
+<main>
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow"><span class="live-dot"></span><span data-i18n="heroTag">ТВОЙ ГОРОД. ТВОИ ВПЕЧАТЛЕНИЯ.</span></span>
+<h1 data-i18n="heroTitle">Планы, которые<br><em>запомнятся.</em></h1>
+<p data-i18n="heroText">Концерты, театр, кино и маленькие путешествия — выбирай настроение, остальное мы уже нашли.</p>
+<div class="hero-actions"><a class="button button-dark" href="events.html" data-i18n="findEvent">Найти событие ↗</a><a class="text-link" href="tours.html" data-i18n="exploreTours">Исследовать туры →</a></div></div>
+<div class="hero-art"><span class="orb o1"></span><span class="orb o2"></span>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1000&q=80" alt="Концерт" onerror="this.remove()"></div>
+<div class="floating-card"><span class="tiny-label">THIS WEEKEND</span><b>Город звучит</b><span class="muted">Музыка · Алматы</span><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="round-stamp">GO<br>OUT<br>✳</div></div>
+</section>
+<section class="ticker"><div><span>✳ ВЫХОДИ ИЗ ДОМА ✳ СОБИРАЙ ВПЕЧАТЛЕНИЯ ✳ ОТКРЫВАЙ СВОЙ ГОРОД ✳ ВЫХОДИ ИЗ ДОМА ✳ СОБИРАЙ ВПЕЧАТЛЕНИЯ ✳ ОТКРЫВАЙ СВОЙ ГОРОД ✳ </span><span>✳ ВЫХОДИ ИЗ ДОМА ✳ СОБИРАЙ ВПЕЧАТЛЕНИЯ ✳ ОТКРЫВАЙ СВОЙ ГОРОД ✳ ВЫХОДИ ИЗ ДОМА ✳ СОБИРАЙ ВПЕЧАТЛЕНИЯ ✳ ОТКРЫВАЙ СВОЙ ГОРОД ✳ </span></div></section>
+<section class="section wrap"><div class="section-heading"><div><span class="eyebrow">01 / DISCOVER</span><h2 data-i18n="catTitle">Что тебе по душе?</h2></div><a class="text-link" href="events.html" data-i18n="allEvents">Вся афиша ↗</a></div>
+<div class="category-grid">
+<a class="category-card cat-concert" href="events.html?type=concert"><span class="category-icon">♫</span><span class="cat-number">01</span><h3 data-i18n="concerts">Концерты</h3><p data-i18n="concertDesc">Живая музыка и большие сцены</p><span class="circle-arrow">↗</span></a>
+<a class="category-card cat-theatre" href="events.html?type=theatre"><span class="category-icon">◉</span><span class="cat-number">02</span><h3 data-i18n="theatre">Театр</h3><p data-i18n="theatreDesc">Истории, которые трогают</p><span class="circle-arrow">↗</span></a>
+<a class="category-card cat-cinema" href="events.html?type=cinema"><span class="category-icon">▻</span><span class="cat-number">03</span><h3 data-i18n="cinema">Кино</h3><p data-i18n="cinemaDesc">Большой экран, полный эффект</p><span class="circle-arrow">↗</span></a>
+<a class="category-card cat-trips" href="tours.html"><span class="category-icon">⌁</span><span class="cat-number">04</span><h3 data-i18n="trips">Туры</h3><p data-i18n="tripsDesc">Сменить картинку за день</p><span class="circle-arrow">↗</span></a>
+</div></section>
+<section class="section wrap"><div class="section-heading"><div><span class="eyebrow">02 / THE SHORTLIST</span><h2 data-i18n="weekTitle">Сейчас в афише</h2></div><a class="text-link" href="events.html" data-i18n="allEvents">Вся афиша ↗</a></div><div class="event-grid" id="homeEvents"></div></section>
+<section class="newsletter wrap"><div><span class="eyebrow" style="color:var(--ink)">NO BORING WEEKENDS</span><h2 data-i18n="nlTitle">Пусть хорошие планы<br>приходят сами.</h2><p data-i18n="nlText">Раз в неделю — подборка событий.</p></div>
+<form id="newsletterForm"><label for="emailInput" data-i18n="nlLabel">ТВОЯ ПОЧТА</label><div class="email-row"><input id="emailInput" type="email" placeholder="hello@example.com" required><button type="submit" aria-label="Подписаться">↗</button></div><small data-i18n="nlPrivacy">Никакого спама.</small><p class="form-message" id="newsletterMessage"></p></form></section>
+</main>
+<div id="siteFooter"></div><script src="app.js"></script></body></html>
